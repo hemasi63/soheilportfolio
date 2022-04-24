@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="219" height="209" viewBox="0 0 219 209">
+  <defs>
+    <filter id="Ellipse_19" x="45" y="19" width="129" height="129" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.278"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="JS" transform="translate(-854 -1722)">
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="219" height="209" rx="10" transform="translate(854 1722)" fill="#fff"/>
+    <g id="Group_9" data-name="Group 9" transform="translate(0 117)">
+      <text id="HTML_5" data-name="HTML 5" transform="translate(910 1783)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Javascript</tspan></text>
+      <g id="Group_3" data-name="Group 3" transform="translate(152 16)">
+        <g transform="matrix(1, 0, 0, 1, 702, 1589)" filter="url(#Ellipse_19)">
+          <circle id="Ellipse_19-2" data-name="Ellipse 19" cx="55.5" cy="55.5" r="55.5" transform="translate(54 25)" fill="#fadf1c"/>
+        </g>
+        <text id="JS-2" data-name="JS" transform="translate(782 1687)" font-size="50" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">JS</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
