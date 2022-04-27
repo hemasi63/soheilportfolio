@@ -139,8 +139,9 @@ background-size:inherit, cover;
 .title-bold{
     color: var(--color-dark);
     font-weight: bold;
-    font-size: 3rem;
-line-height: 1.5;}
+    font-size: 2.7rem;
+line-height: 1.5;
+}
 .title-medium{
     color: var(--color-dark);
     font-weight: bold;
@@ -510,12 +511,18 @@ button.submit:hover{
 .primary{
     color: var(--color-primary);
 }
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
 @media(max-width:834px){
     .cnt{
         display: block;
     }
     .contactimage{
         display: none;
+    }
+    .title-bold{
+        font-size: 2rem !important;
     }
 }
 @media (width:1024px) {
@@ -527,9 +534,38 @@ button.submit:hover{
     padding: 22px 0 9px;
     margin-top: 2em;
   }
+@media (max-width:700px){
+ 
+    .title-bold{
+        font-size: 2rem !important;
+    }
+    .hero{
+        height: auto;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    .skill img{
+        display: block;
+        margin: 5px auto;
+        width: 60%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .social-mobile{
+        display: block !important;
+    }
+    .social-desk{
+        display: none;
+    }
+    .phonr{
+        margin-top: 1rem;
+    }
+}
 
-
-
+.social-mobile{
+    display: none;
+}
 
   /*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
