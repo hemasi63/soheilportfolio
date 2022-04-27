@@ -31,6 +31,9 @@
      --sticky-top-left:5.4rem;
      --stiky-top-right:-18rem;
  }
+ html {
+    scroll-behavior: smooth;
+  }
  body{
     font-family: 'Poppins', sans-serif;
  }
@@ -127,7 +130,7 @@ background-size:inherit, cover;
 }
 .bg-white{
     background-color: #fff;
-    box-shadow: 1px 1px 3px 1px #eee;
+    box-shadow: 1px -2px 9px 0px #373737;
 }
 .title{
     font-size: 2.5rem;
@@ -136,7 +139,7 @@ background-size:inherit, cover;
     color: var(--color-dark);
     font-weight: bold;
     font-size: 3rem;
-}
+line-height: 1.5;}
 .title-medium{
     color: var(--color-dark);
     font-weight: bold;
@@ -199,8 +202,13 @@ padding: 4rem 0;
     width: 100%;
     margin: 5px 0;
 }
-
-
+section#proj {
+    background: #f1f1f1;
+    padding: 3rem 0 4rem;
+}
+.praph{
+    color: var(--color-primary);
+}
 @keyframes blob{
     0%{
         transform: translateY(0);
@@ -498,7 +506,9 @@ button.submit:hover{
     font-weight: normal;
     font-size: 13px;
 }
-
+.primary{
+    color: var(--color-primary);
+}
 @media(max-width:834px){
     .cnt{
         display: block;
@@ -563,4 +573,48 @@ html.has-scroll-smooth {
     cursor: grab; }
     .has-scroll-dragging .c-scrollbar_thumb {
       cursor: -webkit-grabbing;
-      cursor: grabbing; }
+      cursor: grabbing;
+     }
+#my-form-status{
+  
+    display: none;
+    
+}
+
+.hide{
+       animation: message 4s ease-in-out  forwards; 
+}
+   @keyframes message{
+       0%{
+           opacity: 1;
+           pointer-events: all;
+       }
+       90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+   }
+
+
+
+   section#hero {
+    background: #F5F5FF;
+    padding: 8rem 0 3rem;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+.items div{
+    margin-right: 3rem ;
+}
+.image{
+    width: 100%;
+}
