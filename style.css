@@ -601,7 +601,7 @@ html.has-scroll-smooth {
 
 
 
-   section#hero {
+   .intro {
     background: #F5F5FF;
     padding: 8rem 0 3rem;
 }
