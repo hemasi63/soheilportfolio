@@ -31,6 +31,14 @@
      --sticky-top-left:5.4rem;
      --stiky-top-right:-18rem;
  }
+ ::selection {
+    background: var(--color-primary); /* WebKit/Blink Browsers */
+    color: #fff;
+  }
+  ::-moz-selection {
+    background:  var(--color-primary); /* Gecko Browsers */
+    color: #fff;
+  }
  html {
     scroll-behavior: smooth;
   }
@@ -681,7 +689,7 @@ html.has-scroll-smooth {
     width: 100%;
     text-align: right;
    
-}
+padding: 1.5rem 0 1rem;}
 .primary-btn{
    
     background-color: var(--color-primary);
@@ -698,4 +706,15 @@ html.has-scroll-smooth {
     background-color: var(--color-secondary);
     color: var(--color-white);
 
+}
+a.readmore{
+    color:var(--color-primary)  ;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+a.readmore:hover{
+    color:var(--color-dark)  ;
+
+   
 }
