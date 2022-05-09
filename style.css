@@ -40,7 +40,8 @@
  p{
      margin: 0;
      color: var(--color-black);
- line-height: 1.6;}
+     line-height: 1.6;
+}
  a{
      text-decoration:none;
      color:inherit;
@@ -89,9 +90,11 @@
         padding: 0.5rem 0;
         border-bottom: solid 1px #eee;
         width: 100%;
-        display: block;}
+        display: none;
+    }
     li.nav-item:last-child{
         border-bottom: none;
+        display: block;
     }    
     ul.navbar-nav {
         background: #fff;
@@ -205,7 +208,7 @@ padding: 4rem 0;
     margin: 5px 0;
 }
 section#proj {
-    background: #f1f1f1;
+    background: #f5f5f5;
     padding: 3rem 0 4rem;
 }
 .praph{
@@ -255,10 +258,7 @@ section#proj {
     }
   }
   
-  
-
-
-  .expr{
+.expr{
     margin-top: 5em;
 }
 .ex-icon{
@@ -547,7 +547,7 @@ button.submit:hover{
     .skill img{
         display: block;
         margin: 5px auto;
-        width: 60%;
+        width: 80%;
     }
     .title{
         font-size: 2rem;
@@ -561,8 +561,29 @@ button.submit:hover{
     .phonr{
         margin-top: 1rem;
     }
+    .mobile-view{
+        width: 100%;
+        display: block !important;
+    }
+    .mobile-view ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navigation{
+        text-align: center !important;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top{
+       
+         border-bottom: solid 1px #ccc;
+    }
 }
 
+.mobile-view{
+    display: none;
+}
 .social-mobile{
     display: none;
 }
@@ -654,4 +675,27 @@ html.has-scroll-smooth {
 }
 .image{
     width: 100%;
+}
+.navigation{
+    display: block;
+    width: 100%;
+    text-align: right;
+   
+}
+.primary-btn{
+   
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.primary-btn:hover{
+   
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+
 }
