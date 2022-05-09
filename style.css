@@ -291,7 +291,7 @@ align-self: center;}
     width: 62px;
     height: 62px;
     position: absolute;
-    left: 49px;
+    left: 61px;
     top: 50px;
 }
 .icon2::before{
@@ -300,7 +300,7 @@ align-self: center;}
     width: 62px;
     height: 62px;
     position: absolute;
-    left: 57px;
+    left: 69px;
     top: 50px;
 }
 .icon3::before{
@@ -309,7 +309,7 @@ align-self: center;}
     width: 62px;
     height: 62px;
     position: absolute;
-    left: 48px;
+    left: 58px;
     top: 50px;
 }
 .expr-img{
