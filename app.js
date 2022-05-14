@@ -1,5 +1,6 @@
-      const navbar = document.querySelector('.fixed-top')
-document.addEventListener("DOMContentLoaded", function() {
+const navbar = document.querySelector('.fixed-top');
+
+document.addEventListener("DOMContentLoaded", ()=> {
 
  const myFunction=()=>{
     if(window.scrollY>50){
@@ -11,10 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
  }
 
  window.addEventListener("scroll", myFunction);
-  
-
-});
-
+})
   
 
  
