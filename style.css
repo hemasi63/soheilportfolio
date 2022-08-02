@@ -58,7 +58,9 @@
  a:hover{
      color: var(--color-primary);
  }
- 
+ .mt-7{
+    margin-top: 7rem;
+ }
  .navbar-collapse{
      flex-grow: unset !important;
  }
@@ -217,7 +219,7 @@ padding: 4rem 0;
 }
 section#proj {
     background: #f5f5f5;
-    padding: 3rem 0 4rem;
+    padding: 3rem 0 2rem;
 }
 .praph{
     color: var(--color-primary);
@@ -481,9 +483,23 @@ button.submit{
     display: inline-block;
     height: 54px;
     width: 178px;
-border: navajowhite;}
+border: navajowhite;
+}
 button.submit:hover{
-    background-color:#644ada; 
+    background-color:#6d53e2; 
+}
+a.readmore {
+    background: var(--color-primary);
+    color: #fff !important; 
+    padding: 1rem 2rem;
+    line-height: 5;
+    border-radius: 6px;
+    text-decoration: none !important;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+a.readmore:hover{
+    background-color:#6d53e2;   
 }
 .alert{
     background-color: white;
