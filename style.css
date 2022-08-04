@@ -178,13 +178,15 @@ line-height: 1.5;}
 .vector1{
     position: absolute;
     top: 7rem;
-    right: 16rem;
+    right: 9rem;
     animation: vector1 5s  infinite;
+    z-index: 5;
 }
-.blob{
+
+.boble{
     position: absolute;
     right: 11em;
-    top: 0;
+    top: 9rem;
     animation: blob 5s infinite;
 }
 img.about{
