@@ -748,3 +748,9 @@ a.readmore:hover{
 .carousel-control-next{
     right: -52px !important;
 }
+.dimg{
+    width: 100%;
+}
+.mainlogo{
+    width: 80%;
+}
