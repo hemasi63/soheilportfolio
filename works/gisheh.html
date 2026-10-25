@@ -1,201 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gisheh - Soheil Hemmasi Portfolio</title>
-    <link href="../images/favi.png" rel="icon" type="image/png">
-    <link rel="stylesheet" href="../css/style.css">
+	<meta charset="utf-8">
+	<title>Gisheh</title>
+	<link rel="icon" type="image/png" href="../images/favi.png">
+
+	<!-- mobile responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- theme meta -->
+	<meta name="theme-name" content="thomson" />
+
+	<!-- ** Plugins Needed for the Project ** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../plugins/themify/css/themify-icons.css">
+	<link rel="stylesheet" href="../plugins/counto/animate.css">
+	<link rel="stylesheet" href="../plugins/aos/aos.css">
+	<link rel="stylesheet" href="../plugins/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../plugins/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../plugins/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="../plugins/animated-text/animated-text.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+	<!-- Main Stylesheet -->
+	<link href="../css/style.css" rel="stylesheet">
+
+
+
+	<script>
+		window.scrollToTop = function () {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		};</script>
+
 </head>
+
 <body>
 
-    <nav>
-		<div>
-			<a href="../index.html">
-				<img alt="" src="../images/logo.svg">
+
+	<!-- Header Start -->
+	<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+		<div class="container">
+			<a class="navbar-brand" href="../index.html">
+				<img src="../images/logo.svg" alt="" class="img-fluid">
 			</a>
 
-			<div>
-				<ul>
-					<li><a href="../index.html">My works</a></li>
-					<li><a href="mailto:s.hemasi63@gmail.com">Contact</a></li>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+				data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="ti-align-justify"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExample09">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item  active"><a class="nav-link" href="../index.html">My works</a></li>
+
+					
+
+
+
+					<li class="nav-item"><a class="nav-link" href="mailto:s.hemasi63@gmail.com">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<section>
-		<div>
-			<div>
-				<div>
-					<div>
-						<h2>Gisheh</h2>
+	<!-- Header Close -->
+
+
+
+
+	<section class="section portfolio-single">
+		<div class="container">
+			<div class="row mt-6">
+				<div class="col-lg-6 contentcenter">
+					<div class="project-info ">
+						<h2 class="mb-2 ">Gisheh</h2>
 						<p>Redesigning a Movie Ticketing Flow</p>
 
-						<div>
-							<h5>Role:</h5>
-							<p>End-to-End UX/UI Design (Heuristic Evaluation, Research, Wireframing, Prototyping, Accessibility)</p>
 
-							<h5>Tools:</h5>
+						<div class="info">
+							<h5 class="mb-0">Role</h5>
+							<p>End-to-End UX/UI Design (Research, Wireframing, Prototyping)</p>
+
+							<h5 class="mt-3">Tools:</h5>
 							<p>Figma</p>
-							<h5>Timeline:</h5>
+							<h5 class="mt-3">Timeline:</h5>
 							<p>2020</p>
 						</div>
 					</div>
 				</div>
-				<div>
-					<img alt="" src="../images/ghisheh/1.jpg">
+				<div class="col-lg-6">
+					<img src="../images/ghisheh/1.jpg" alt="" class="img-fluid w-100">
 				</div>
-			</div>
 
-			<div>
-				<div>
-					<h2>
+
+			</div>
+			<div class="row mt-5">
+				<div class="col-lg-12">
+					<h2 class="mb-2 ">
 						Project overview
 					</h2>
-					<p>
-						Gisheh set out to redesign its ticketing app. Rather than starting from a blank canvas, this project began with a rigorous heuristic audit of the existing application: identifying severe usability breakdowns, addressing color-accessibility flaws, and architecting a cohesive, accessible design system.
+					<p>Gisheh set out to redesign its own application. Rather than designing from a
+						 blank page, the project's approach was a close audit of the existing
+						  version of the app: analyzing a real product, identifying where the user 
+						  experience broke down, and rebuilding it with a coherent design system 
+						  not just a visual refresh.
 					</p>
-
-					<h2>
-						Problem & Heuristic Audit
+					<h2 class="mb-2 ">
+						Problem
 					</h2>
-					<p>The original app covers a complete booking flow—sign in, browse, showtimes, seat selection, payment, and ticketing—but a heuristic evaluation surfaced five critical friction points:</p>
+					<p>The original app covers a complete booking flow — sign in, browse, showtimes, 
+						seat selection, payment, and tickets — but a heuristic review surfaced five recurring issues:</p>
 					<ul>
-						<li><b>Colour used as the sole status signal (Accessibility flaw):</b> On the seat map, available and reserved states shared near-identical shades of red, violating WCAG standards and creating visual confusion for color-blind users.</li>
-						<li><b>Inconsistent visual hierarchy:</b> Inconsistent typography cases and unlabelled groupings made the experience feel fragmented across different screens.</li>
-						<li><b>Decorative imagery competing with content:</b> High-contrast background imagery on input fields and payment cards severely degraded legibility.</li>
-						<li><b>Unconventional navigation pattern:</b> A floating, unlabelled mid-tab action button disrupted standard iOS/Android navigation paradigms.</li>
-						<li><b>Lack of location-based discovery:</b> Users had no capability to search or filter cinemas by city or proximity.</li>
-					</ul>
-					<p><img src="../images/ghisheh/old-design.jpg" alt="Old app design friction points"></p>
+						<li><b>Colour used as the only signal:</b> On the seat map, the legend lists three states (available, reserved, selected), but available and reserved are both rendered in near-identical shades of red, so at a glance the map reads as "mostly unavailable." Nothing besides colour distinguishes the states.</li>
+					<li><b>Inconsistent visual hierarchy between screens:</b>Some screens use bold section labels in full caps, others use lowercase, unlabelled groupings (e.g. "showtime found" appearing mid-flow with no clear parent heading), which makes the app feel like several screens stitched from different sources.</li>
+				   <li><b>Decorative imagery competing with content:</b>The sign-in screen places the input fields over a busy cinema-hall photo, which lowers contrast on the labels. The payment screen reuses a movie's key art cropped so tightly it reads as an unrelated close-up rather than a poster.</li>	 
+				   <li><b>An unconventional bottom navigation:</b>A floating circular button sits mid-tab-bar without a clear label, breaking the otherwise standard tab pattern and creating ambiguity about what it does relative to the other four icons.</li>
+				   <li><b>No way to search for cinemas by city or location:</b>Users had no way to filter or search for cinemas based on their city or where they live, which made it harder to find the nearest or most convenient cinema.</li>
+				</ul>
+						<p><img src="../images/ghisheh/old-design.jpg" style="width: 100%;"></p>
 				
-					<h2>Goals</h2>
+					<h2 class="mb-2 ">Goals</h2>
 					<ul>
-						<li>Make every seat map state accessible and distinguishable using multi-cue indicators (shape, texture, and color) conforming to WCAG standards.</li>
-						<li>Establish a standardized typography, tokenized color, and spatial grid system.</li>
-						<li>Provide an accessible, cinema-first visual identity rather than a generic dark-mode template.</li>
-						<li>Standardize bottom navigation to a predictable 5-tab pattern with clear spatial orientation.</li>
+						<li>Make every state on the seat map distinguishable without relying on colour alone
+</li>
+						<li>Establish one consistent type and spacing system across all screens</li>
+						<li>Give the product a visual identity specific to "going to the cinema," rather than a generic dark-mode template
+</li>
+						<li>Simplify the navigation pattern to a standard, predictable tab bar
+</li>
 					</ul>
+					<h2 class="mb-2 "> Design Process</h2>
+					<p>I started with a quick heuristic audit of the four original screen sets (sign in, browse, seat selection, payment/tickets), logging every friction point against Nielsen's heuristics before touching visuals. From there I built a small token system  colour, type, spacing, so that decisions on one screen would hold on all the others, then moved into mid-fidelity layouts before finishing in high fidelity.
+</p>
 
-					<h2>Design Process</h2>
-					<p>I initiated the project with a formal UX audit across four core screen sets, logging friction points against Nielsen’s 10 Usability Heuristics. From there, I built a lightweight design token system (color, type, spatial scale) to ensure cross-screen coherence before translating wireframes into polished high-fidelity layouts.</p>
+					<h2 class="mb-2 ">Wireframes</h2>
+					<p>Before any type, colour, or imagery choices, I blocked out all screens as low-fidelity wireframes — grey placeholder fills for media, outlined boxes for interactive elements, and hatched blocks for disabled or occupied states. This is where layout problems get caught cheaply: it's what surfaced that showtimes needed day and time-of-day filters shown together rather than as sequential steps, and that the seat map needed a third visual property (not just colour) to separate its three states.
+</p>
+ <p style="text-align: center;"><img src="../images/ghisheh/wire-frame.jpg" style="width: 80%;"></p>
 
-					<h2>Wireframes</h2>
-					<p>Blocking out layouts in low-fidelity grayboxes exposed structural issues early: revealing that showtimes needed combined day/time filtering and that seat maps required distinct fill patterns rather than color variations alone.</p>
-					<p><img src="../images/ghisheh/wire-frame.jpg" alt="Low fidelity wireframes"></p>
+ <h2 class="mb-2 ">Design System</h2>
+ <p>This system is built around a modern, clean user interface using primary purple and white/grey tones.</p>
+  <h4 class="subtitle">Colour</h4>
+  <ul>
+	<li><b>Background: </b> Pale near-white (#FDFCFE) is used as the primary background for main screens, and light grey (#CCCCCC) for containers, borders, and background dividers.</li>
+    <li><b>Brand & Accent Colour</b> Deep purple (#8F00FF) serves as the primary brand colour for all key interactive elements (such as buttons, active icons, and selected checkboxes).</li> 
+	<li><b>State Colours:</b>
+	<ul>
+		<li><b>Selected:</b> Purple (#8F00FF) (same as the brand colour).</li>
+		<li><b>Available:</b> White with a grey outline.</li>
+		<li><b>Taken / Occupied:</b> Solid dark grey (#757575).</li>
 
-					<h2>Design System & Accessibility</h2>
-					<p>Built around a modern, light-theme interface with primary deep purple (#8F00FF) brand accents and strict contrast parameters:</p>
+	</ul>
+	</li>
+	
+</ul>
+ <h4 class="subtitle">Type</h4>
+ <ul>
+	<li>The primary font used throughout the app is Roboto, applied across all titles, UI text, labels, and numeric data (such as prices and times).</li>
+	<li><b>Titles:</b> Large font size and bold weight for main page headings.</li>
+	<li><b>Body Copy & Labels:</b>  Medium size and regular/medium weight for descriptions and form/card labels.</li>
+ </ul>
+  <h4 class="subtitle">Interaction Patterns</h4>
+  <ul>
+	<li><b>Time Filters:</b> Day and showtime selection are displayed together on a single screen ("Select time" screen) so the user can directly pick both. Days appear as selectable cards (with an active purple state) and times are listed below them.</li>
+    <li><b>Seat Map:</b> Utilizes a three-state visual system designed to ensure accessibility for users with colour vision deficiencies without relying solely on colour:
+	  <ul>
+		<li><b>Available</b> — Outlined squares (no fill).</li>
+		<li><b>Selected</b> — Solid purple squares.</li>
+		<li><b>Taken</b> — Solid dark grey squares.</li>
+	  </ul>
+	</li>  
+</ul>
+	<h4 class="subtitle">Signature Motif</h4>
+	<p><b>Booking Confirmation</b> — The confirmation screen ("Confirm" screen) features a summary card topped with the movie poster and ticket details beneath it. The central element of this screen is a prominent purple QR code that acts as the final digital ticket.</p>
+			
+    <p style="text-align: center;"><img src="../images/ghisheh/Design system.png" style="width: 60%;"></p>
+  <h2 class="mb-2">Screen-by-screen changes</h2>
+  <h4 class="subtitle">Sign in</h4>
+  <ul>
+	<li><b>Problem:</b> The dark UI with a cinema-hall background photo behind the form reduced label contrast and added unnecessary visual noise.</li>
+    <li><b>Change:</b> Replaced the dark theme and photo with a clean, light-mode interface (#FDFCFE background), clear input fields with #CCCCCC borders, and primary purple branding (#8F00FF) for the action button and links. Social sign-ins were also expanded to include Google, Facebook, and Apple options.</li>  
+</ul>
+<p style="text-align: center;"><img src="../images/ghisheh/sign-in.jpg" style="width: 50%;"></p>
+<h4 class="subtitle">Browse, Search & Location</h4>
+<ul>
+	<li><b>Problem:</b> The original design split navigation into separate tabs/modes ("Title" vs "Screen Time") at the top, and lacked the ability to select a cinema or search based on the user's location.</li>
+	<li><b>Change:</b> The segmented mode toggles were replaced with a unified home screen featuring a prominent search bar ("Search title, actor, genre") and clean filter chips (All / Tonight / Original lang.). Additionally, a location-based cinema selection feature was added (showing cinemas near the user with calculated distances) so users can easily search and choose films and cinemas based on their location.</li>
+</ul>
+<p style="text-align: center;"><img src="../images/ghisheh/search.jpg" style="width: 50%;"></p>
+<h4 class="subtitle">Showtimes</h4>
+<ul>
+	<li><b>Problem:</b> the day and time filters progressively narrow the list (Today → Morning/Afternoon/Evening → results), but each step re-shows the same header ("Today 23") without clarifying what's new, and the result count label ("9 screen time found") isn't grammatical or clearly tied to a heading.</li>
+    <li><b>Change:</b> day and time-of-day are shown together as two independent filter rows above a single results list, so the current selection is always visible in one glance, and each showtime row now surfaces seats-left as a real signal ("9 seats left") instead of a generic count.
+</li>
+</ul>
+<p style="text-align: center;"><img src="../images/ghisheh/time.jpg" style="width: 100%;"></p>
+<h4 class="subtitle">Seat selection</h4>
+<ul>
+	<li><b>Problem:</b> In the original design, available seats are grey outlines and reserved seats are red fills, which lacks texture or secondary visual indicators for accessibility.</li>
+	<li><b>Change:</b> Available seats are unfilled outlines, taken seats use a diagonal hatched fill in a separate dusty rose/brown hue, and selected seats are solid purple — ensuring states are distinguishable by shape and texture rather than colour alone.</li>
+</ul>
+<p style="text-align: center;"><img src="../images/ghisheh/seats.jpg" style="width: 50%;"></p>
+
+<h4 class="subtitle">Payment</h4>
+<ul>
+	<li><b>Problem:</b> The original design used a dark, high-contrast ticket card featuring a tightly-cropped movie poster as a background image, with minimal breakdown of payment methods or itemized costs.</li>
+    <li><b>Change:</b> Replaced with a clean, light-mode summary card including a clear poster thumbnail, movie title, cinema name, date, time, and seat details. Added selectable payment method options (Visa/Mastercard), an explicit coupon code field, and a clear itemized summary with a total amount displayed directly on the primary confirmation button.</li>
+</ul>
+<p style="text-align: center;"><img src="../images/ghisheh/payment.jpg" style="width: 50%;"></p>
+<h4 class="subtitle">Ticket confirmation</h4>
+<ul>
+	<li>
+		<b>Problem:</b> n the old design, confirming a booking navigated users directly to a generic tickets list, bypassing an explicit confirmation step, while the tickets view lacked categorization for past and upcoming movies.</li>
+	<li><b>Change:</b> Introduced a dedicated "You're all set" confirmation screen right after payment with a clear torn-ticket card, QR code, and an explicit reassurance message ("Show this code at the entrance. It also lives under My Tickets, even offline."). Additionally, the "My Tickets" section has been redesigned with segmented tabs for "Upcoming" and "Past" tickets, providing clear actions like "View ticket" or "Rate this movie".</li>
+</ul>
+<p style="text-align: center;"><img src="../images/ghisheh/ticket.jpg" style="width: 95%;"></p>
+ <h4 class="subtitle">Navigation:</h4>
+ <ul>
+	<li>
+		<b>Problem:</b> The original navigation featured a dark, floating button that broke the standard layout flow, making the interface harder to navigate.
+	</li>
+	<li><b>Change:</b> Replaced it with a clean, simple, and easy-to-understand bottom tab bar consisting of five clear pages (Home, Location of cinemas, List of movies, Tickets, and Profile), creating a familiar and predictable pattern for users.</li>
+ </ul>
+ <p style="text-align: center;"><img src="../images/ghisheh/navigation.jpg" style="width: 50%;"></p>
+<h2 class="mb-2">Reflection</h2>
+					<p>The hardest part wasn't the visual system—it was resisting the urge to redesign everything at once. Starting with a thorough UX audit meant every change was driven by a genuine usability issue rather than personal preference. Having successfully completed this end-to-end redesign, this project stands as a comprehensive case study in transforming a cluttered and fragmented cinematic booking experience into a seamless, accessible, and intuitive user journey.</p>
+				</div>
+</div>
+			<div class="row mt-5 justify-content-center">
+				<div class="col-lg-6 text-center">
+
+					<a href="./reportmanagement.html" class="btn btn-dark">Next project</a>
 					
-					<h4>Colour Tokens</h4>
-					<ul>
-						<li><b>Background:</b> Near-white (#FDFCFE) for optimal canvas legibility and light grey (#CCCCCC) for surface containers.</li>
-						<li><b>Brand & Action:</b> Deep purple (#8F00FF) reserved strictly for primary interactive triggers (buttons, active tabs, selected states).</li> 
-						<li><b>Accessible Seat Map States:</b>
-							<ul>
-								<li><b>Available:</b> White fill with neutral grey stroke (unfilled).</li>
-								<li><b>Selected:</b> Solid brand purple (#8F00FF).</li>
-								<li><b>Taken / Occupied:</b> Solid dark grey (#757575) with diagonal hatch texture.</li>
-							</ul>
-						</li>
-					</ul>
-
-					<h4>Typography & Hierarchy</h4>
-					<ul>
-						<li>Primary Typeface: <b>Roboto</b> across all labels, UI copy, and numeric showtime/pricing metadata.</li>
-						<li>Structured Heading Scale: Clear distinction between page titles, card headers, and secondary body metadata.</li>
-					</ul>
-
-					<h4>Accessible Interaction Patterns</h4>
-					<ul>
-						<li><b>Unified Time Filtering:</b> Day and showtime filters consolidated into a single dual-row control, keeping active filter parameters visible at a glance.</li>
-						<li><b>Multi-Cue Seat Selection:</b> Eliminates sole reliance on color by combining shape outlines, solid fills, and diagonal textures for full color-blind accessibility.</li>
-					</ul>
-
-					<p><img src="../images/ghisheh/Design system.png" alt="Gisheh Design System"></p>
-
-					<h2>Screen-by-Screen Redesign</h2>
-
-					<h4>Sign In</h4>
-					<ul>
-						<li><b>Problem:</b> Dark theme with background imagery degraded form contrast.</li>
-						<li><b>Change:</b> Transitioned to a clean light UI (#FDFCFE) with high-contrast input borders and expanded social sign-in options (Google, Apple, Facebook).</li>  
-					</ul>
-					<p><img src="../images/ghisheh/sign-in.jpg" alt="Sign in redesign"></p>
-
-					<h4>Browse, Search & Location</h4>
-					<ul>
-						<li><b>Problem:</b> Fragmented search categories and absence of location-aware search.</li>
-						<li><b>Change:</b> Unified search bar with smart filter chips and geo-location sorting to display nearby cinemas by distance.</li>
-					</ul>
-					<p><img src="../images/ghisheh/search.jpg" alt="Search and location redesign"></p>
-
-					<h4>Showtimes & Seats</h4>
-					<ul>
-						<li><b>Problem:</b> Multi-step time selection hid showtime availability until late in the flow.</li>
-						<li><b>Change:</b> Exposed seat count metadata directly ("9 seats left") alongside consolidated date/time chips.</li>
-					</ul>
-					<p><img src="../images/ghisheh/time.jpg" alt="Showtime redesign"></p>
-
-					<h4>Accessible Seat Selection</h4>
-					<ul>
-						<li><b>Problem:</b> Red vs. grey seat fills lacked texture or multi-cue indicators for color-blind users.</li>
-						<li><b>Change:</b> Applied distinct strokes, solid purple fills, and diagonal hatched textures for instant accessibility.</li>
-					</ul>
-					<p><img src="../images/ghisheh/seats.jpg" alt="Seat selection redesign"></p>
-
-					<h4>Payment & Confirmation</h4>
-					<ul>
-						<li><b>Problem:</b> Overly complex payment breakdown and lack of explicit confirmation.</li>
-						<li><b>Change:</b> Introduced itemized cost breakdowns, selectable payment methods, and an explicit digital ticket card complete with an offline QR code.</li>
-					</ul>
-					<p><img src="../images/ghisheh/payment.jpg" alt="Payment redesign"></p>
-					<p><img src="../images/ghisheh/ticket.jpg" alt="Ticket confirmation redesign"></p>
-
-					<h4>Standardized Navigation</h4>
-					<ul>
-						<li><b>Problem:</b> Floating middle button created navigational ambiguity.</li>
-						<li><b>Change:</b> Replaced with a predictable 5-tab bottom navigation bar (Home, Cinemas, Movies, Tickets, Profile).</li>
-					</ul>
-					<p><img src="../images/ghisheh/navigation.jpg" alt="Navigation redesign"></p>
-
-					<h2>Key Outcomes</h2>
-					<ul>
-						<li><b>100% WCAG Color-Blind Accessibility:</b> Re-engineered seat selection maps using shape, stroke, and texture indicators.</li>
-						<li><b>Reduced Booking Friction:</b> Consolidated showtime filters and introduced geo-location search to accelerate movie-to-checkout conversion.</li>
-						<li><b>Scalable UI Kit:</b> Created a modular design token system ensuring visual consistency across all key user touchpoints.</li>
-					</ul>
-
-					<h2>Reflection</h2>
-					<p>The core challenge was balancing visual modernization with systematic UX audit principles. Grounding every design decision in Nielsen's Heuristics ensured that changes solved real user friction rather than serving aesthetic preferences alone. This case study demonstrates the impact of converting an inaccessible, fragmented flow into an intuitive, inclusive digital product.</p>
-				</div>
-			</div>
-
-			<div>
-				<div>
-					<a href="./reportmanagement.html">Next project</a>
-				</div>
 			</div>
 		</div>
 	</section>
+	<button id="backToTopBtn" onclick="scrollToTop()" aria-label="Back to top">
+		<i class="fas fa-chevron-up"></i>
+	</button>
 
-	<section>
-		<div>
-			<div>
-				<div>
-					<p>Copyrights © 2026. | Get In Touch <a href="mailto:s.hemasi63@gmail.com">s.hemasi63@gmail.com</a></p>
+	<!-- Footer start -->
+	<section class="footer">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-6 ">
+					<p class="mb-0">Copyrights © 2026. | Get In Touch <a
+							href="mailto:s.hemasi63@gmail.com">s.hemasi63@gmail.com</a>
+					</p>
 				</div>
-				<div>
-					<div>
-						<ul>
-							<li><a href="https://www.linkedin.com/in/soheilhemmasi/" target="_blank"><i></i></a></li>
+				<div class="col-lg-6">
+					<div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/feryalmajidi/"
+									target="_blank"><i class="ti-linkedin mr-3"></i></a>
+							</li>
+
+
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- Footer End -->
+	<!-- jQuery -->
+	<script src="../plugins/jQuery/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="../plugins/aos/aos.js"></script>
+	<script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../plugins/shuffle/shuffle.min.js"></script>
+	<script src="../plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="../plugins/animated-text/animated-text.js"></script>
+	<script src="../plugins/counto/apear.js"></script>
+	<script src="../plugins/counto/counTo.js"></script>
 
-</body>
+	<!-- Google Map -->
+	<script src="../plugins/google-map/map.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+	<!-- Main Script -->
+	<script src="../js/script.js"></script>
+
+
 </html>
